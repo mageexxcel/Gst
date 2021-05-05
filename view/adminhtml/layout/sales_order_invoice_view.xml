@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Excellence . All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="invoice_items">
+            <action method="setTemplate" ifconfig="gst/excellence/status">
+                <argument name="template" xsi:type="string">Excellence_Gst::order/invoice/view/items.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock as="default">
+            <action method="setTemplate" ifconfig="gst/excellence/status">
+                <argument name="template" xsi:type="string">Excellence_Gst::order/invoice/view/items/renderer/default.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock name="tax">
+            <action method="setTemplate" ifconfig="gst/excellence/status">
+                <argument name="template" xsi:type="string">Excellence_Gst::order/totals/tax.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>
