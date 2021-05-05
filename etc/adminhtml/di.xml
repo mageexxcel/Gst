@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Excellence . All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Sales\Block\Adminhtml\Order\View\Items\Renderer\DefaultRenderer" type="Excellence\Gst\Block\Adminhtml\Order\View\Items\Renderer\DefaultRenderer"/>
+    <preference for="Magento\Sales\Block\Adminhtml\Items\Renderer\DefaultRenderer" type="Excellence\Gst\Block\Adminhtml\Items\Renderer\DefaultRenderer"/>
+
+    <preference for="Magento\Reports\Block\Adminhtml\Sales\Sales\Grid" type="Excellence\Gst\Block\Adminhtml\Sales\Sales\Grid"/>
+    <preference for="Magento\Reports\Block\Adminhtml\Sales\Tax\Grid" type="Excellence\Gst\Block\Adminhtml\Sales\Tax\Grid"/>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Excellence. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Excellence_Gst::Excellence" title="Excellence" module="Excellence_Gst" sortOrder="51" parent="Excellence_Base::base" resource="Excellence_Base::base"/>
+        <add id="Excellence_Gst::gst_configuration" title="GST Configuration" module="Excellence_Gst" sortOrder="99" parent="Excellence_Gst::Excellence" action="adminhtml/system_config/edit/section/gst" resource="Excellence_Gst::config"/>
+    </menu>
+</config>
